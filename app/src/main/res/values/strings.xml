@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DataClass Activities App</string>
+    <string name="no_data">Sin datos</string>
+    <string name="welcome_user">Bienvenido, %1$s</string>
+    <string name="active_user">Usuario activo: %1$s</string>
+    <string name="drawer_open">Abrir menú lateral</string>
+    <string name="drawer_close">Cerrar menú lateral</string>
+    <string name="drawer_home_description">Desde este menú drawer puede navegar a los módulos Menús, Cliente y Producto, y luego ingresar los datos de cada actividad correspondiente.</string>
+</resources>

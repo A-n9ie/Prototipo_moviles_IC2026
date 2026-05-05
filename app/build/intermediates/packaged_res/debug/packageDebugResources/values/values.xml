@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="ic_launcher_background">#6750A4</color>
+    <color name="purple_500">#6750A4</color>
+    <color name="purple_700">#4F378B</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="active_user">Usuario activo: %1$s</string>
+    <string name="app_name">DataClass Activities App</string>
+    <string name="drawer_close">Cerrar menú lateral</string>
+    <string name="drawer_home_description">Desde este menú drawer puede navegar a los módulos Menús, Cliente y Producto, y luego ingresar los datos de cada actividad correspondiente.</string>
+    <string name="drawer_open">Abrir menú lateral</string>
+    <string name="no_data">Sin datos</string>
+    <string name="welcome_user">Bienvenido, %1$s</string>
+    <style name="Theme.DataClassActivitiesApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+</resources>

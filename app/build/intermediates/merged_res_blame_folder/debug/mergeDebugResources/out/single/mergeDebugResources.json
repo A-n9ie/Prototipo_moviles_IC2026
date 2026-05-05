@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "C:\\Users\\Usuario\\.gradle\\daemon\\9.0.0\\com.example.dataclassactivitiesapp-debug-35:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Usuario\\.gradle\\daemon\\9.0.0\\com.example.dataclassactivitiesapp-main-37:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Usuario\\.gradle\\daemon\\9.0.0\\com.example.dataclassactivitiesapp-debug-35:\\drawable_bg_card.xml.flat",
+        "source": "C:\\Users\\Usuario\\.gradle\\daemon\\9.0.0\\com.example.dataclassactivitiesapp-main-37:\\drawable\\bg_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\Usuario\\.gradle\\daemon\\9.0.0\\com.example.dataclassactivitiesapp-debug-35:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\Usuario\\.gradle\\daemon\\9.0.0\\com.example.dataclassactivitiesapp-main-37:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "com.example.dataclassactivitiesapp-debug-35:/layout_activity_producto.xml.flat",
+        "source": "com.example.dataclassactivitiesapp-main-37:/layout/activity_producto.xml"
+    },
+    {
+        "merged": "C:\\Users\\Usuario\\.gradle\\daemon\\9.0.0\\com.example.dataclassactivitiesapp-debug-35:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Usuario\\.gradle\\daemon\\9.0.0\\com.example.dataclassactivitiesapp-main-37:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.dataclassactivitiesapp-debug-35:/menu_drawer_menu.xml.flat",
+        "source": "com.example.dataclassactivitiesapp-main-37:/menu/drawer_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Usuario\\.gradle\\daemon\\9.0.0\\com.example.dataclassactivitiesapp-debug-35:\\layout_activity_second.xml.flat",
+        "source": "C:\\Users\\Usuario\\.gradle\\daemon\\9.0.0\\com.example.dataclassactivitiesapp-main-37:\\layout\\activity_second.xml"
+    },
+    {
+        "merged": "C:\\Users\\Usuario\\.gradle\\daemon\\9.0.0\\com.example.dataclassactivitiesapp-debug-35:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\Usuario\\.gradle\\daemon\\9.0.0\\com.example.dataclassactivitiesapp-main-37:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "com.example.dataclassactivitiesapp-debug-35:/layout_nav_header.xml.flat",
+        "source": "com.example.dataclassactivitiesapp-main-37:/layout/nav_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\Usuario\\.gradle\\daemon\\9.0.0\\com.example.dataclassactivitiesapp-debug-35:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Usuario\\.gradle\\daemon\\9.0.0\\com.example.dataclassactivitiesapp-main-37:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.dataclassactivitiesapp-debug-35:/layout_activity_cliente.xml.flat",
+        "source": "com.example.dataclassactivitiesapp-main-37:/layout/activity_cliente.xml"
+    },
+    {
+        "merged": "C:\\Users\\Usuario\\.gradle\\daemon\\9.0.0\\com.example.dataclassactivitiesapp-debug-35:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Usuario\\.gradle\\daemon\\9.0.0\\com.example.dataclassactivitiesapp-main-37:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.dataclassactivitiesapp-debug-35:/layout_activity_main.xml.flat",
+        "source": "com.example.dataclassactivitiesapp-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.dataclassactivitiesapp-debug-35:/layout_activity_menus.xml.flat",
+        "source": "com.example.dataclassactivitiesapp-main-37:/layout/activity_menus.xml"
+    }
+]
