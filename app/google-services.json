@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "46219875609",
+    "project_id": "lab04app-moviles",
+    "storage_bucket": "lab04app-moviles.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46219875609:android:6e3610791f303fd674a188",
+        "android_client_info": {
+          "package_name": "com.example.dataclassactivitiesapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ8r-Bwn8QWh-S2Xzx2h3OhkcztKDGytQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
