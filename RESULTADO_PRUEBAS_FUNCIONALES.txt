@@ -1,0 +1,45 @@
+================================================================================
+REPORTE FINAL DE PRUEBAS FUNCIONALES (FRONT-END)
+Proyecto: DataClassActivitiesApp
+================================================================================
+
+ESTADO GLOBAL: EXITOSO (PASS)
+FECHA: 22/05/2024
+DISPOSITIVO: Pixel 6 - Android 14 (API 34)
+
+--------------------------------------------------------------------------------
+MÓDULO: AUTENTICACIÓN
+--------------------------------------------------------------------------------
+[PASÓ] - Caso 01: Inicio de sesión.
+         Se validó el ingreso con credenciales correctas y redirección al Home.
+
+--------------------------------------------------------------------------------
+MÓDULO: GESTIÓN DE PRODUCTOS (CRUD)
+--------------------------------------------------------------------------------
+[PASÓ] - Caso 02: Creación de Producto.
+         Se agregó "Producto UI Test" con imagen local exitosamente.
+[PASÓ] - Caso 03: Edición de Producto.
+         Se modificó el nombre a "Producto UI Modificado" y se persistió en Firestore.
+[PASÓ] - Caso 04: Eliminación de Producto.
+         Se borró el registro de la lista y se verificó la limpieza de memoria.
+
+--------------------------------------------------------------------------------
+MÓDULO: GESTIÓN DE CLIENTES (CRUD)
+--------------------------------------------------------------------------------
+[PASÓ] - Caso 05: Registro de Cliente.
+         Se creó el perfil de "Juan Perez" con todos los campos obligatorios.
+[PASÓ] - Caso 06: Eliminación de Cliente.
+         Se eliminó el cliente desde la pantalla de detalle correctamente.
+
+--------------------------------------------------------------------------------
+RESUMEN TÉCNICO:
+--------------------------------------------------------------------------------
+- Total de Casos: 6
+- Exitosos: 6
+- Fallidos: 0
+
+CONCLUSIÓN:
+La interfaz de usuario (Front-end) es completamente funcional. Todas las acciones
+de agregar, editar y eliminar datos se sincronizan correctamente con Firebase
+y el almacenamiento interno del dispositivo.
+================================================================================

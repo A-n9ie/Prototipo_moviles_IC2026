@@ -1,34 +1,34 @@
 [
     {
-        "merged": "com.example.dataclassactivitiesapp-mergeDebugResources-71:/layout/activity_producto.xml",
-        "source": "com.example.dataclassactivitiesapp-main-74:/layout/activity_producto.xml"
+        "merged": "com.example.dataclassactivitiesapp-mergeDebugResources-72:/layout/activity_second.xml",
+        "source": "com.example.dataclassactivitiesapp-main-75:/layout/activity_second.xml"
     },
     {
-        "merged": "com.example.dataclassactivitiesapp-mergeDebugResources-71:/layout/activity_second.xml",
-        "source": "com.example.dataclassactivitiesapp-main-74:/layout/activity_second.xml"
+        "merged": "com.example.dataclassactivitiesapp-mergeDebugResources-72:/layout/activity_producto.xml",
+        "source": "com.example.dataclassactivitiesapp-main-75:/layout/activity_producto.xml"
     },
     {
-        "merged": "com.example.dataclassactivitiesapp-mergeDebugResources-71:/layout/nav_header.xml",
-        "source": "com.example.dataclassactivitiesapp-main-74:/layout/nav_header.xml"
+        "merged": "com.example.dataclassactivitiesapp-mergeDebugResources-72:/layout/nav_header.xml",
+        "source": "com.example.dataclassactivitiesapp-main-75:/layout/nav_header.xml"
     },
     {
-        "merged": "com.example.dataclassactivitiesapp-mergeDebugResources-71:/layout/activity_menus.xml",
-        "source": "com.example.dataclassactivitiesapp-main-74:/layout/activity_menus.xml"
+        "merged": "com.example.dataclassactivitiesapp-mergeDebugResources-72:/layout/activity_main.xml",
+        "source": "com.example.dataclassactivitiesapp-main-75:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.dataclassactivitiesapp-mergeDebugResources-71:/layout/activity_register.xml",
-        "source": "com.example.dataclassactivitiesapp-main-74:/layout/activity_register.xml"
+        "merged": "com.example.dataclassactivitiesapp-mergeDebugResources-72:/layout/activity_cliente.xml",
+        "source": "com.example.dataclassactivitiesapp-main-75:/layout/activity_cliente.xml"
     },
     {
-        "merged": "com.example.dataclassactivitiesapp-mergeDebugResources-71:/layout/activity_login.xml",
-        "source": "com.example.dataclassactivitiesapp-main-74:/layout/activity_login.xml"
+        "merged": "com.example.dataclassactivitiesapp-mergeDebugResources-72:/layout/activity_menus.xml",
+        "source": "com.example.dataclassactivitiesapp-main-75:/layout/activity_menus.xml"
     },
     {
-        "merged": "com.example.dataclassactivitiesapp-mergeDebugResources-71:/layout/activity_main.xml",
-        "source": "com.example.dataclassactivitiesapp-main-74:/layout/activity_main.xml"
+        "merged": "com.example.dataclassactivitiesapp-mergeDebugResources-72:/layout/activity_register.xml",
+        "source": "com.example.dataclassactivitiesapp-main-75:/layout/activity_register.xml"
     },
     {
-        "merged": "com.example.dataclassactivitiesapp-mergeDebugResources-71:/layout/activity_cliente.xml",
-        "source": "com.example.dataclassactivitiesapp-main-74:/layout/activity_cliente.xml"
+        "merged": "com.example.dataclassactivitiesapp-mergeDebugResources-72:/layout/activity_login.xml",
+        "source": "com.example.dataclassactivitiesapp-main-75:/layout/activity_login.xml"
     }
 ]

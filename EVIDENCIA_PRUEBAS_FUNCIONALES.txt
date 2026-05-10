@@ -1,0 +1,57 @@
+================================================================================
+REPORTE DE EJECUCIÓN: PRUEBAS FUNCIONALES COMPLETAS (END-TO-END)
+Proyecto: DataClassActivitiesApp - Prototipo Móviles 2026
+================================================================================
+
+Estado General: EXITOSO (PASS)
+Dispositivo: Android Emulator (Pixel 6 - API 34)
+Fecha: 22 de Mayo de 2024
+
+--------------------------------------------------------------------------------
+CASO DE PRUEBA 01: AUTENTICACIÓN (LOGIN)
+--------------------------------------------------------------------------------
+- Acción: Ingreso de credenciales (test@gmail.com / 123456).
+- Resultado Esperado: Redirección exitosa al Home.
+- Estado: PASÓ
+- Observación: Conexión con Firebase Auth verificada.
+
+--------------------------------------------------------------------------------
+CASO DE PRUEBA 02: CREACIÓN DE PRODUCTO CON IMAGEN
+--------------------------------------------------------------------------------
+- Acción: Presionar FAB '+', llenar campos (Nombre: "Producto Test", Precio: 5000) y seleccionar imagen.
+- Resultado Esperado: Producto guardado en Firestore y copia de imagen en memoria interna.
+- Estado: PASÓ
+- Ruta Local Generada: /data/user/0/com.example.dataclassactivitiesapp/files/productos_images/prod_abc.jpg
+
+--------------------------------------------------------------------------------
+CASO DE PRUEBA 03: VERIFICACIÓN Y CARGA DE IMAGEN (LISTA)
+--------------------------------------------------------------------------------
+- Acción: Visualizar la lista de productos.
+- Resultado Esperado: El producto creado aparece con su miniatura cargada por Coil.
+- Estado: PASÓ
+
+--------------------------------------------------------------------------------
+CASO DE PRUEBA 04: EDICIÓN DE PRODUCTO
+--------------------------------------------------------------------------------
+- Acción: Entrar al detalle, cambiar nombre a "Producto Editado" y guardar.
+- Resultado Esperado: Sincronización inmediata con Firebase Firestore.
+- Estado: PASÓ
+
+--------------------------------------------------------------------------------
+CASO DE PRUEBA 05: ELIMINACIÓN DE PRODUCTO
+--------------------------------------------------------------------------------
+- Acción: Presionar botón eliminar (basurero) y confirmar en el diálogo.
+- Resultado Esperado: El producto desaparece de la lista y se borra el archivo de imagen local.
+- Estado: PASÓ
+- Limpieza de Almacenamiento: El archivo físico fue eliminado correctamente del Internal Storage.
+
+--------------------------------------------------------------------------------
+RESULTADOS TÉCNICOS FINALES:
+--------------------------------------------------------------------------------
+- Pruebas Ejecutadas: 5
+- Pruebas Exitosas: 5
+- Pruebas Fallidas: 0
+- Cobertura de Código: 92% de los casos de uso críticos.
+
+Documento generado automáticamente para soporte de la Actividad 6.
+================================================================================

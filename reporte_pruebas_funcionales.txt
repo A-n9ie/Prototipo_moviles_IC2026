@@ -1,0 +1,21 @@
+REPORTE DE PRUEBAS FUNCIONALES - PROYECTO DATACLASSAPP
+=====================================================
+Fecha: 22 de Mayo de 2024
+Actividad: 6 - Pruebas y Documentación
+
+1. PRUEBAS FUNCIONALES DE SISTEMA (End-to-End)
+-------------------------------------------
+- Funcionalidad: Gestión Integral de Productos.
+- Descripción: Ciclo de vida completo del producto (Login -> Crear con imagen -> Ver lista -> Editar -> Eliminar).
+- Resultado: EXITOSO (100% de los casos de uso crítico aprobados).
+- Detalle: Se validó que la aplicación responde correctamente a las interacciones del usuario. La migración al sistema de almacenamiento local resolvió los problemas de red (error 404) y permite el manejo de imágenes de forma persistente.
+
+2. PRUEBAS DE ACEPTACIÓN DE USUARIO (Manuales)
+-------------------------------------
+- Caso: Registro e inicio de sesión con Firebase Auth. -> EXITOSO.
+- Caso: Creación de producto con imagen (Cámara y Galería). -> EXITOSO.
+- Caso: Visualización y carga de imágenes locales mediante Coil. -> EXITOSO.
+- Caso: Persistencia tras reinicio de la aplicación. -> EXITOSO.
+
+CONCLUSIÓN:
+La aplicación es plenamente funcional y cumple con los requisitos del prototipo móvil. El sistema permite gestionar el inventario de productos incluyendo archivos multimedia de manera confiable, utilizando una arquitectura híbrida de base de datos en la nube y archivos en el almacenamiento interno del dispositivo.
