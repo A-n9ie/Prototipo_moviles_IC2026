@@ -1,30 +1,31 @@
 package com.example.dataclassactivitiesapp.ui.screens.producto
 
+import android.Manifest
+import android.net.Uri
+import android.widget.Toast
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.CameraAlt
+import androidx.compose.material.icons.filled.Image
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
+import androidx.core.content.FileProvider
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
+import coil.compose.AsyncImage
 import com.example.dataclassactivitiesapp.data.model.Producto
 import com.example.dataclassactivitiesapp.viewmodel.ProductoViewModel
 import com.example.dataclassactivitiesapp.viewmodel.UiState
-
-import android.net.Uri
-import androidx.activity.compose.rememberLauncherForActivityResult
-import androidx.activity.result.contract.ActivityResultContracts
-import androidx.compose.material.icons.filled.CameraAlt
-import androidx.compose.material.icons.filled.Image
-import androidx.compose.ui.platform.LocalContext
-import androidx.core.content.FileProvider
-import coil.compose.AsyncImage
 import java.io.File
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -35,6 +36,7 @@ fun ProductoFormScreen(
     onNavigateBack: () -> Unit,
     vm: ProductoViewModel = viewModel()
 ) {
+    val context     = LocalContext.current
     val isEditing   = productoId != null
     val detailState by vm.detailState.collectAsStateWithLifecycle()
     val opState     by vm.opState.collectAsStateWithLifecycle()
@@ -50,7 +52,6 @@ fun ProductoFormScreen(
     var precioError by remember { mutableStateOf(false) }
     var stockError  by remember { mutableStateOf(false) }
     var imageUri    by remember { mutableStateOf<Uri?>(null) }
-    val context     = LocalContext.current
 
     // Crea un archivo temporal para la foto
     val photoFile   = remember {
@@ -64,7 +65,20 @@ fun ProductoFormScreen(
     val cameraLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.TakePicture()
     ) { success ->
-        if (success) imageUri = photoUri
+        if (success) {
+            imageUri = photoUri
+        }
+    }
+
+    // Lanzador de permisos para la cámara
+    val permissionLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.RequestPermission()
+    ) { isGranted ->
+        if (isGranted) {
+            cameraLauncher.launch(photoUri)
+        } else {
+            Toast.makeText(context, "Permiso de cámara denegado. No se puede tomar la foto.", Toast.LENGTH_LONG).show()
+        }
     }
 
     // Lanzador para elegir de galería
@@ -220,7 +234,7 @@ fun ProductoFormScreen(
                 modifier = Modifier.fillMaxWidth()
             ) {
                 OutlinedButton(
-                    onClick = { cameraLauncher.launch(photoUri) },
+                    onClick = { permissionLauncher.launch(Manifest.permission.CAMERA) },
                     modifier = Modifier.weight(1f)
                 ) {
                     Icon(Icons.Filled.CameraAlt, contentDescription = null,
