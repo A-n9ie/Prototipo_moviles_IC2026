@@ -31,7 +31,7 @@ Este proyecto es una aplicación Android desarrollada con **Jetpack Compose** qu
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com/Ivan/Prototipo_moviles_IC2026.git
+   git clone https://github.com/A-n9ie/Prototipo_moviles_IC2026.git
    ```
 
 2. **Abrir en Android Studio:**
