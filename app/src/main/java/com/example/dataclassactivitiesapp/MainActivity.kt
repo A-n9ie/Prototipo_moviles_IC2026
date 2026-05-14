@@ -13,7 +13,6 @@ class MainActivity : ComponentActivity() {
         setContent {
             MaterialTheme {
                 Surface {
-                    // AppNavigation será creado en la Fase 2
                     AppNavigation()
                 }
             }
