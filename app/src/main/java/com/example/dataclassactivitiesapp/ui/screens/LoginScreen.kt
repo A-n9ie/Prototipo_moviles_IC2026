@@ -27,7 +27,8 @@ fun LoginScreen(
 
     // Cuando el login es exitoso, navegar al Home
     LaunchedEffect(uiState) {
-        if (uiState is AuthUiState.Success) {
+        val currentState = uiState
+        if (currentState is AuthUiState.Success) {
             authViewModel.resetState()
             onLoginSuccess()
         }
@@ -71,9 +72,10 @@ fun LoginScreen(
         Spacer(modifier = Modifier.height(8.dp))
 
         // Mensaje de error
-        if (uiState is AuthUiState.Error) {
+        val state = uiState
+        if (state is AuthUiState.Error) {
             Text(
-                text = (uiState as AuthUiState.Error).message,
+                text = state.message,
                 color = MaterialTheme.colorScheme.error,
                 style = MaterialTheme.typography.bodySmall
             )

@@ -27,7 +27,8 @@ fun RegisterScreen(
     val uiState by authViewModel.uiState.collectAsStateWithLifecycle()
 
     LaunchedEffect(uiState) {
-        if (uiState is AuthUiState.Success) {
+        val currentState = uiState
+        if (currentState is AuthUiState.Success) {
             authViewModel.resetState()
             onRegisterSuccess()
         }
@@ -82,9 +83,10 @@ fun RegisterScreen(
 
         Spacer(modifier = Modifier.height(8.dp))
 
-        if (uiState is AuthUiState.Error) {
+        val state = uiState
+        if (state is AuthUiState.Error) {
             Text(
-                text = (uiState as AuthUiState.Error).message,
+                text = state.message,
                 color = MaterialTheme.colorScheme.error,
                 style = MaterialTheme.typography.bodySmall
             )
